@@ -43,6 +43,7 @@ function getRemainingTime(){
           item.innerHTML = format(values[index]);
     });
     if(diffTime < 0){
+      clearInterval(countDown)
        deadline.innerHTML = `<h4 class="expired">sorry, this giveAway has expired </h4>`
     }
 }
